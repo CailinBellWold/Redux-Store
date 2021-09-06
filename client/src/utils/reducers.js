@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+// import { useReducer } from 'react';
 import {
   UPDATE_PRODUCTS,
   ADD_TO_CART,
@@ -10,6 +10,24 @@ import {
   CLEAR_CART,
   TOGGLE_CART,
 } from './actions';
+
+//Set up Initial State, as was previously done in Global State
+const initialState = {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: '',
+};
+
+// const StoreProvider = ({ value = [], ...props }) => {
+//   const [state, dispatch] = useProductReducer({
+//     products: [],
+//     cart: [],
+//     cartOpen: false,
+//     categories: [],
+//     currentCategory: '',
+//   }); 
 
 // The reducer is a function that accepts the current state and an action. It returns a new state based on that action.
 export const reducer = (state, action) => {
