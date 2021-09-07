@@ -40,16 +40,26 @@ GIVEN an e-commerce platform that uses Redux to manage global state...
 5. When a user reviews the way the app dispatches actions, then they find that the app uses Redux instead of the Context API.
 
 ## Technologies Used 
-<!-- - Heroku
-- JavaScript
-- Mongo
-- [MongoDB Atlas] (https://www.mongodb.com/cloud/atlas)
-- Mongoose
-- Node.js
+- Heroku
+- [NPM Apollo Client Package](https://www.npmjs.com/package/stripe)
+- [NPM Apollo-Server-Express Package](https://www.npmjs.com/package/apollo-server-express)
+- [NPM Bcrypt Package](https://www.npmjs.com/package/bcrypt)
 - [NPM Express.js Package](https://www.npmjs.com/package/express)
 - [NPM Express-Session Package](https://www.npmjs.com/package/express-session)
-- [NPM dotenv Package](https://www.npmjs.com/package/dotenv)
-- [NPM nodemon Package](https://www.npmjs.com/package/nodemon) -->
+- [NPM GraphQL Package](https://www.npmjs.com/package/graphql)
+- [NPM JSONWebToken](https://www.npmjs.com/package/jsonwebtoken)
+- [NPM JWT-Decode Package](https://www.npmjs.com/package/jwt-decode)
+- [NPM Mongoose Package](https://www.npmjs.com/package/mongoose)
+- [NPM nodemon Package](https://www.npmjs.com/package/nodemon)
+- [NPM Stripe Package](https://www.npmjs.com/package/stripe)
+- [NPM React Package](https://www.npmjs.com/package/react)
+- [React-Dom](https://www.npmjs.com/package/react-dom)
+- [React-Redux](https://www.npmjs.com/package/react-redux)
+- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+- [React-Scripts](https://www.npmjs.com/package/react-scripts)
+- JavaScript
+- Node.js
+<!-- - [NPM dotenv Package](https://www.npmjs.com/package/dotenv) -->
 
 ## Screen Shot
 
