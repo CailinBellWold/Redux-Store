@@ -1,21 +1,16 @@
 import React, { useEffect } from 'react';
-import ProductItem from '../ProductItem';
-// import { useStoreContext } from '../../utils/GlobalState';
-import { useDispatch, useSelector } from 'react-redux';//CBW ADDED
-import { UPDATE_PRODUCTS } from '../../utils/actions';
+import { useDispatch, useSelector } from 'react-redux';
 import { useQuery } from '@apollo/client';
-import { QUERY_PRODUCTS } from '../../utils/queries';
+import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { idbPromise } from '../../utils/helpers';
+import { QUERY_PRODUCTS } from '../../utils/queries';
 import spinner from '../../assets/spinner.gif';
+import ProductItem from '../ProductItem';
 
 function ProductList() {
-  const dispatch = useDispatch(); //CBW ADDED
-  const state = useSelector((state) => state);//CBW ADDED
-
-  // const [state, dispatch] = useStoreContext();
-
+  const state = useSelector((state) => { return state });
+  const dispatch = useDispatch()
   const { currentCategory } = state;
-
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   useEffect(() => {
